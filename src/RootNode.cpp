@@ -1,10 +1,3 @@
-// //************************************************************
-// // this is a simple example that uses the painlessMesh library to
-// // connect to a node on another network. Please see the WIKI on gitlab
-// // for more details
-// //
-// https://gitlab.com/painlessMesh/painlessMesh/wikis/bridge-between-mesh-and-another-network
-// //************************************************************
 #include <Arduino.h>
 #include <painlessMesh.h>
 #include <ESPDash.h>
@@ -39,7 +32,7 @@ typedef struct {
   Card* card;
   bool status;
 } CardDetail;
-// Map that associates nodeId to CardDetail*
+// Map that associates nodeId to CardDetail pointer.
 std::map<uint32_t, CardDetail*> cardDetailMap;
 
 const uint8_t THRESHOLD = 50;
